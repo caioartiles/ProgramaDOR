@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio Audiovisual</title>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFD700, #000);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .title {
+            font-family: "Neuzeit", sans-serif;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="LOGO.jpg" alt="Sua Logo" style="max-height: 40px;">
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#foto">Foto</a>
+                <a class="navbar-item" href="#video">Video</a>
+                <a class="navbar-item" href="#design">Design</a>
+                <a class="navbar-item" href="#animacoes">Animações</a>
+                <a class="navbar-item" href="#programacao">Programação</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="title" id="animated-title">ARTI</h1>
+        <p><a href="https://www.instagram.com/caioartiles/" target="_blank">Me siga no Instagram! 📸</a></p>
+    </div>
+
+    <div class="columns">
+        <div class="column is-3">
+            <p>📱 933 433 204 / <a href="https://www.linkedin.com/in/caioartiles/" target="_blank">Caio Artiles</a> / SOBRE MIM! Nascido no Rio de Janeiro...</p>
+        </div>
+        <div class="column">
+            
+        </div>
+    </div>
+
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        
+    </nav>
+
+    <div class="container is-fluid">
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        const title = document.getElementById("animated-title");
+        title.addEventListener("click", () => {
+            
+            anime({
+                targets: title,
+                scale: 1.2,
+                duration: 1000,
+                direction: "alternate",
+                loop: 2,
+                easing: "easeInOutQuad",
+            });
+        });
+    </script>
+</body>
+</html>
+
